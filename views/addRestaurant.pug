@@ -1,0 +1,14 @@
+html 
+    title Add Restaurant
+    
+body 
+    include partials/header
+    h3= "Add a Restaurant"
+    p Name: 
+        input(type="text" id="name")
+    p Delivery Fee: 
+        input(type="text" id="delivery_fee")
+    p Minimum Order: 
+        input(type="text" id="minimum_order")
+    button(id="submit") Submit
+    script(src='addRestaurant.js')

@@ -1,0 +1,9 @@
+html 
+    head 
+        title Restaurants 
+    
+body 
+    include partials/header
+    each restaurant in restaurants 
+        a(href="restaurants/" + restaurant.id)= restaurant.name 
+        br

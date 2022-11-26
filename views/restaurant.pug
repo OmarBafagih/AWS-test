@@ -1,0 +1,44 @@
+html 
+    title restaurant 
+
+body(onload="init()")
+    include partials/header
+    h3#id Restaurant ID: #{restaurant.id}
+    
+    h4(style="padding-left: 15px") Restaurant Info:
+
+    p(style="padding-left: 35px") Restaurant Name: 
+        input(style="padding-left: 5px" type="text" id="name" value=`${restaurant.name}`) 
+    p(style="padding-left: 35px") Delivery Fee ($): 
+        input(style="padding-left: 5px" type="text" id="delivery_fee" value=`${restaurant.delivery_fee}`) 
+    p(style="padding-left: 35px") Minimum Order ($): 
+        input(style="padding-left: 5px" type="text" id="min_order" value=`${restaurant.min_order}`)
+
+
+    h4(style="padding-left: 15px") Add A Category: 
+    |
+    p(style="padding-left: 35px") Category Name: 
+        input(style="padding-left: 5px" type="text" id="newCategory")
+        =" " 
+        button(id="addCategory") Add Category
+    |
+
+    h4(style="padding-left: 15px") Add Item:
+    |
+    p(style="padding-left: 35px") Select Category: 
+        select(style="padding-left: 5px" id="categories")
+    p(style="padding-left: 35px") Item Name: 
+        input(style="padding-left: 5px" type="text" id="itemName")
+    p(style="padding-left: 35px") Item Description: 
+        input(style="padding-left: 5px" type="text" id="itemDescription")
+    p(style="padding-left: 35px") Item Price ($): 
+        input(style="padding-left: 5px" type="text" id="itemPrice")
+    button(id="addItem") Add Item
+    |
+
+    h4(style="padding-left: 15px") Menu:
+    |
+    div(style="padding-left: 35px" id="menu") 
+    |
+    button(id="save") Save Changes
+    script(src='/restaurant.js')

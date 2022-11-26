@@ -1,0 +1,16 @@
+{
+  "name": "a3_comp2406_omarbafagih",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  },
+  "description": "//Name: Omar Bafagih\r //Student ID: 101209028"
+}
